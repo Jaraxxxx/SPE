@@ -1,0 +1,115 @@
+### For CMake Files Creation:
+
+## Mandatory lines to include on top:
+    - cmake_minimum_required(VERSION 3.22.1/<version-number>)
+    - project("Calculator"/<project-name>)
+
+## Adding an executable for the project:
+
+    # Syntax:
+    - add_executable(<Output-file> <Main-file> <Dependency-files)
+    
+    # Use-Case:
+    - add_executable(Calculator.out main.cpp)
+    
+
+    # Project Folder Structure:
+    - Main_file.cpp
+    - Calculator.cpp
+    - Calculator.h
+    - CMakeLists.txt
+
+    # Command Shell
+    - cmake -Bbuild -G "MinGW Makefiles" ### Used to create the application based on the architecture provided (i.e MinGW Makefiles)
+    - cd build
+    - mingw32-make ### Make the required files provided in the Makefile
+    - cd ..
+    - cmake --build build ### To create the output file provided in the Makefile (i.e executable file here)
+
+
+## Adding an executable for the project with shared library:(By default the library created is not of shared type after build)
+    
+    # Syntax:
+    - add_library(<Shared-lib-interface-file> <Shared-library-Cpp-file>)
+    - add_executable(<Output-file> <Main-file>)
+    - target_link_libraries(<Output-file> <Shared-lib-interface-file>)
+
+    # Use-Case:
+    - add_library(Calculator libs/Calculator.cpp)
+    - add_executable(Calculator.out main.cpp)
+    - target_link_libraries(Calculator.out Calculator)
+
+    # Project Folder Structure:
+    - Shared-Lib
+        - Calculator.h (Interface)
+        - Calculator.cpp (Function Defination)
+    - Main_file.cpp
+    - CMakeLists.txt
+
+
+    # Command Shell
+    - cmake -Bbuild -G "MinGW Makefiles" ### Used to create the application based on the architecture provided (i.e MinGW Makefiles)
+    - cd build
+    - mingw32-make ### Make the required files provided in the Makefile
+    - cd ..
+    - cmake --build build ### To compile the make file and provid executables provided in the Makefile
+
+
+## Adding an executable for the project with shared library:(The library created will be of shared type after build)
+
+    # Syntax:
+    - add_library(<Shared-lib-interface-file> SHARED <Shared-library-Cpp-file>)
+    - add_executable(<Output-file> <Main-file>)
+    - target_link_libraries(<Output-file> <Shared-lib-interface-file>)
+
+    # Use-Case:
+    - add_library(Calculator SHARED libs/Calculator.cpp)
+    - add_executable(Calculator.out main.cpp)
+    - target_link_libraries(Calculator.out Calculator)
+
+    # Project Folder Structure:
+    - Shared-Lib
+        - Calculator.h (Interface)
+        - Calculator.cpp (Function Defination)
+    - Main_file.cpp
+    - CMakeLists.txt
+
+    # Command Shell
+    - cmake -Bbuild -G "MinGW Makefiles" ### Used to create the application based on the architecture provided (i.e MinGW Makefiles)
+    - cd build
+    - mingw32-make ### Make the required files provided in the Makefile
+    - cd ..
+    - cmake --build build ### To compile the make file and provid executables provided in the Makefile
+
+
+## Adding an executable for the project with shared library in more professional manner :(The library created will be of shared type and build automatically on calling the outer CMakeLists file after build)
+
+    # Syntax:
+    - CMakeLists.txt:
+        - include_directories(<Shared-Lib>)
+        - add_executable(<Output-file> <Main-file>)
+        - target_link_libraries(<Output-file> <Shared-lib-interface-file>)
+        - add_subdirectory(<Shared-Lib>)
+
+    - <Shared-lib>/CMakeLists.txt:
+        - add_library(<Shared-lib-Interface-folder-name> SHARED <Shared-library-Cpp-file>)
+    
+
+    # Use-Case:
+    - add_library(Calculator SHARED libs/Calculator.cpp)
+    - add_executable(Calculator.out main.cpp)
+    - target_link_libraries(Calculator.out Calculator)
+
+    # Project Folder Structure:
+    - Shared-Lib
+        - Calculator.h (Interface)
+        - Calculator.cpp (Function Defination)
+    - Main_file.cpp
+    - CMakeLists.txt
+
+    # Command Shell
+    - cmake -Bbuild -G "MinGW Makefiles" ### Used to create the application based on the architecture provided (i.e MinGW Makefiles)
+    - cd build
+    - mingw32-make ### Make the required files provided in the Makefile
+    - cd ..
+    - cmake --build build ### To compile the make file and provid executables provided in the Makefile
