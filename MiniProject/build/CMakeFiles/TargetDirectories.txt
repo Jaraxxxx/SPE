@@ -1,6 +1,0 @@
-C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/build/CMakeFiles/Calculator.out.dir
-C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/build/CMakeFiles/edit_cache.dir
-C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/build/CMakeFiles/rebuild_cache.dir
-C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/build/libs/CMakeFiles/calc.dir
-C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/build/libs/CMakeFiles/edit_cache.dir
-C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/build/libs/CMakeFiles/rebuild_cache.dir
