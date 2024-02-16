@@ -1,7 +1,9 @@
+#ifndef CALCULATOR_H
+#define CALCULATOR_H
+
 #include <iostream>
 #include <math.h>
 using namespace std;
-
 
 class Calculator{
 private:
@@ -18,3 +20,5 @@ public:
 
     long long power(int base,int raise);
 };
+
+#endif
