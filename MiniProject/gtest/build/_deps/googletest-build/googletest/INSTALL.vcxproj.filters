@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MiniProject\gtest\build\CMakeFiles\8d3f91bd43ff65a3f5900fa545e579b2\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CD9DE829-4BB5-3C64-B734-7138CA2E3834}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/gtest/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
+		},
+		{
+			"file" : "C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/gtest/build/_deps/googletest-subbuild/CMakeFiles/f3daed22700f5876165557611819d02c/googletest-populate.rule"
+		},
+		{
+			"file" : "C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/gtest/build/_deps/googletest-subbuild/CMakeFiles/ca88aeb76d7e76091ba7607d7e048054/googletest-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/gtest/build/_deps/googletest-subbuild/CMakeFiles/e5f7ef29c45d1e4d3b0176c05c07c68c/googletest-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/gtest/build/_deps/googletest-subbuild/CMakeFiles/e5f7ef29c45d1e4d3b0176c05c07c68c/googletest-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/gtest/build/_deps/googletest-subbuild/CMakeFiles/e5f7ef29c45d1e4d3b0176c05c07c68c/googletest-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/gtest/build/_deps/googletest-subbuild/CMakeFiles/e5f7ef29c45d1e4d3b0176c05c07c68c/googletest-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/gtest/build/_deps/googletest-subbuild/CMakeFiles/e5f7ef29c45d1e4d3b0176c05c07c68c/googletest-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/gtest/build/_deps/googletest-subbuild/CMakeFiles/e5f7ef29c45d1e4d3b0176c05c07c68c/googletest-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/gtest/build/_deps/googletest-subbuild/CMakeFiles/e5f7ef29c45d1e4d3b0176c05c07c68c/googletest-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/gtest/build/_deps/googletest-subbuild/CMakeFiles/e5f7ef29c45d1e4d3b0176c05c07c68c/googletest-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest-populate"
+		],
+		"name" : "googletest-populate"
+	}
+}
