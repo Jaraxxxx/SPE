@@ -1,0 +1,14 @@
+# Target labels
+ googletest-populate
+# Source files and their labels
+C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MSVC/Calculator/MiniProject/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate
+C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MSVC/Calculator/MiniProject/build/_deps/googletest-subbuild/CMakeFiles/1f89c7987c336a3371cd53745eafc275/googletest-populate.rule
+C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MSVC/Calculator/MiniProject/build/_deps/googletest-subbuild/CMakeFiles/459cb91792c037b4de81828cbb99fc84/googletest-populate-complete.rule
+C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MSVC/Calculator/MiniProject/build/_deps/googletest-subbuild/CMakeFiles/1e1c43fc58ccad70ba439d563e49f9f2/googletest-populate-build.rule
+C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MSVC/Calculator/MiniProject/build/_deps/googletest-subbuild/CMakeFiles/1e1c43fc58ccad70ba439d563e49f9f2/googletest-populate-configure.rule
+C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MSVC/Calculator/MiniProject/build/_deps/googletest-subbuild/CMakeFiles/1e1c43fc58ccad70ba439d563e49f9f2/googletest-populate-download.rule
+C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MSVC/Calculator/MiniProject/build/_deps/googletest-subbuild/CMakeFiles/1e1c43fc58ccad70ba439d563e49f9f2/googletest-populate-install.rule
+C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MSVC/Calculator/MiniProject/build/_deps/googletest-subbuild/CMakeFiles/1e1c43fc58ccad70ba439d563e49f9f2/googletest-populate-mkdir.rule
+C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MSVC/Calculator/MiniProject/build/_deps/googletest-subbuild/CMakeFiles/1e1c43fc58ccad70ba439d563e49f9f2/googletest-populate-patch.rule
+C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MSVC/Calculator/MiniProject/build/_deps/googletest-subbuild/CMakeFiles/1e1c43fc58ccad70ba439d563e49f9f2/googletest-populate-test.rule
+C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MSVC/Calculator/MiniProject/build/_deps/googletest-subbuild/CMakeFiles/1e1c43fc58ccad70ba439d563e49f9f2/googletest-populate-update.rule

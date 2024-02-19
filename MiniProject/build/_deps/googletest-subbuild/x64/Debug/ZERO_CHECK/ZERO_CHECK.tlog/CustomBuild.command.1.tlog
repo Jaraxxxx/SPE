@@ -1,0 +1,10 @@
+^C:\USERS\JAYMR\MEGASYNC\DATABASE\XJAY DOCS\IIIT_BANGALORE\MTECH\TERM2\SPE\MSVC\CALCULATOR\MINIPROJECT\BUILD\_DEPS\GOOGLETEST-SUBBUILD\CMAKEFILES\1F89C7987C336A3371CD53745EAFC275\GENERATE.STAMP.RULE
+setlocal
+C:\CMake\bin\cmake.exe "-SC:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MSVC/Calculator/MiniProject/build/_deps/googletest-subbuild" "-BC:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MSVC/Calculator/MiniProject/build/_deps/googletest-subbuild" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MSVC/Calculator/MiniProject/build/_deps/googletest-subbuild/googletest-populate.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

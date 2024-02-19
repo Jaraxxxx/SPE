@@ -16,14 +16,14 @@ long long Calculator::factorial(int n){
     return value;
 }
 
-long long Calculator::root(int n){
+double Calculator::root(int n){
     return sqrt(n);
 }
 
-long long Calculator::natlog(int n){
+double Calculator::natlog(int n){
     return log(n);
 }
 
-long long Calculator::power(int base,int raise){
+double Calculator::power(int base,int raise){
     return pow(base,raise);
 }

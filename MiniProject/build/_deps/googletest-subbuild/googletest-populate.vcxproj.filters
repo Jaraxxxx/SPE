@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\build\_deps\googletest-subbuild\CMakeFiles\1e1c43fc58ccad70ba439d563e49f9f2\googletest-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\build\_deps\googletest-subbuild\CMakeFiles\1e1c43fc58ccad70ba439d563e49f9f2\googletest-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\build\_deps\googletest-subbuild\CMakeFiles\1e1c43fc58ccad70ba439d563e49f9f2\googletest-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\build\_deps\googletest-subbuild\CMakeFiles\1e1c43fc58ccad70ba439d563e49f9f2\googletest-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\build\_deps\googletest-subbuild\CMakeFiles\1e1c43fc58ccad70ba439d563e49f9f2\googletest-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\build\_deps\googletest-subbuild\CMakeFiles\1e1c43fc58ccad70ba439d563e49f9f2\googletest-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\build\_deps\googletest-subbuild\CMakeFiles\1e1c43fc58ccad70ba439d563e49f9f2\googletest-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\build\_deps\googletest-subbuild\CMakeFiles\1e1c43fc58ccad70ba439d563e49f9f2\googletest-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\build\_deps\googletest-subbuild\CMakeFiles\459cb91792c037b4de81828cbb99fc84\googletest-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\build\_deps\googletest-subbuild\CMakeFiles\1f89c7987c336a3371cd53745eafc275\googletest-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\build\_deps\googletest-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\build\_deps\googletest-subbuild\CMakeFiles\googletest-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{09DB6B44-3066-307E-AABC-B9B4605090FC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
