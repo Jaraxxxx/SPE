@@ -1,5 +1,6 @@
 #include "calc/Calculator.h"
-using namespace std;
+
+Calculator c;
 
 Calculator::Calculator(){
     this->value = 0;
