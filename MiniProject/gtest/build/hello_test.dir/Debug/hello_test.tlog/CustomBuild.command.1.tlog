@@ -1,0 +1,10 @@
+^C:\USERS\JAYMR\MEGASYNC\DATABASE\XJAY DOCS\IIIT_BANGALORE\MTECH\TERM2\SPE\MINIPROJECT\GTEST\CMAKELISTS.TXT
+setlocal
+C:\CMake\bin\cmake.exe "-SC:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/gtest" "-BC:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/gtest/build" --check-stamp-file "C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MiniProject/gtest/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
