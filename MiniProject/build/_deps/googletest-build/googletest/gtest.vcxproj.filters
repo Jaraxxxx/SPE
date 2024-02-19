@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\build\_deps\googletest-src\googletest\src\gtest-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\build\_deps\googletest-src\googletest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8AE045AF-3754-3A50-9A48-AC5951652AB5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -14,11 +14,11 @@ public:
     
     long long factorial(int n);
 
-    long long root(int n);
+    double root(int n);
 
-    long long natlog(int n);
+    double natlog(int n);
 
-    long long power(int base,int raise);
+    double power(int base,int raise);
 };
 
 #endif

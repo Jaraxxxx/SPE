@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\libs\Calculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\libs\calc\Calculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jaymr\MegaSync\DATABASE\XJay Docs\IIIT_Bangalore\MTech\Term2\SPE\MSVC\Calculator\MiniProject\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9C39D56A-7AE4-35DB-B5E3-6A070374B0F7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8AE045AF-3754-3A50-9A48-AC5951652AB5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

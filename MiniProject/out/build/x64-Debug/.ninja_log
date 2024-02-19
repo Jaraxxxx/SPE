@@ -1,0 +1,32 @@
+# ninja log v5
+2	6862	7300394138017332	build.ninja	a379fed5eb2a7b0c
+18	308	7300388017987109	CMakeFiles/Calculator.dir/libs/Calculator.cpp.obj	96da2a4486ef03a4
+42	578	7300388020632850	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	209f4b676f07d3a9
+28	1368	7300388028534667	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.obj	8c751e172af9c997
+20	622	7300388021096591	CMakeFiles/Calculator_TEST.dir/libs/test/Calculator_test.cpp.obj	1d318e1a36311e5f
+34	673	7300388021588407	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	bdd0ec5e864e793
+25	994	7300388024828868	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	ed664be806b44821
+31	1001	7300388024884617	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.obj	d3b87c54d5277d8c
+23	1373	7300388028594916	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.obj	8324aea061507015
+37	1398	7300388028840352	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	19233996d3ac4388
+33	136	7300389727119286	lib/gtest.lib	fcfe7dd6bb338196
+20	141	7300389727182684	lib/gmock.lib	2a23859862ef7246
+26	146	7300389727232100	lib/gmock_main.lib	4038bedf096a2449
+20	96	7300389950846725	lib/gtest_main.lib	79dc48b1bf1c825a
+27	612	7300394481951594	CMakeFiles/Calculator.dir/main.cpp.obj	c2efb0ac138ca60b
+613	1086	7300394486494753	Calculator.exe	73d7ad1abf9378f7
+73	1128	7300394487122602	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	50d9392d31f3fb32
+32	1156	7300394487409319	CMakeFiles/Calculator_test.dir/libs/test/Calculator_test.cpp.obj	cabb92a278a441b7
+62	1254	7300394488381982	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	40b0a51e475f7d0a
+58	1747	7300394493263945	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.obj	17dbfd6e06bbc53a
+39	1758	7300394493395812	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	f300ae70d0b48f4e
+35	2398	7300394499772905	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.obj	5970b898b43de3de
+43	2410	7300394499872107	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.obj	da42af4d65274048
+2398	2515	7300394500617671	lib/gmock.lib	2a23859862ef7246
+2410	2515	7300394500743632	lib/gmock_main.lib	4038bedf096a2449
+66	2533	7300394501128591	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	d4e5f822c8028212
+2533	2610	7300394501773017	lib/gtest.lib	fcfe7dd6bb338196
+2610	2652	7300394502316985	lib/gtest_main.lib	79dc48b1bf1c825a
+2652	3143	7300394507271644	Calculator_test.exe	acd64cef3e9b27
+2652	3143	7300394507271644	Calculator_test[1]_tests.cmake	acd64cef3e9b27
+2652	3143	7300394507271644	C:/Users/jaymr/MegaSync/DATABASE/XJay Docs/IIIT_Bangalore/MTech/Term2/SPE/MSVC/Calculator/MiniProject/out/build/x64-Debug/Calculator_test[1]_tests.cmake	acd64cef3e9b27

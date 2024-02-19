@@ -1,0 +1,184 @@
+diff --git a/.vscode/settings.json b/.vscode/settings.json
+index 1be854f..921f4ae 100644
+--- a/.vscode/settings.json
++++ b/.vscode/settings.json
+@@ -1,5 +1,7 @@
+ {
+     "files.associations": {
+-        "cmath": "cpp"
++        "cmath": "cpp",
++        "ostream": "cpp",
++        "iostream": "cpp"
+     }
+ }
+\ No newline at end of file
+diff --git a/MiniProject/CMakeLists.txt b/MiniProject/CMakeLists.txt
+index 8b0f600..b591f22 100644
+--- a/MiniProject/CMakeLists.txt
++++ b/MiniProject/CMakeLists.txt
+@@ -1,24 +1,7 @@
++cmake_minimum_required(VERSION 3.22.1)
++project("Calculator")
+ cmake_minimum_required(VERSION 3.14)
+-set(MAIN Calculator)
+-set(TESTS Calculator_TEST)
+-project(${MAIN})
+-
+-
+-include_directories(libs)
+-include_directories(calc)
+-
+-set(SOURCES
+-    main.cpp
+-    libs/Calculator.cpp
+-)
+-
+-set(HEADERS
+-    libs/calc/Calculator.h
+-)
+-
+-set(TEST_SOURCES
+-    libs/test/Calculator_test.cpp
+-)
++project(Calculator)
+ 
+ # GoogleTest requires at least C++14
+ set(CMAKE_CXX_STANDARD 11)
+@@ -29,27 +12,45 @@ FetchContent_Declare(
+   googletest
+   URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+ )
++
+ # For Windows: Prevent overriding the parent project's compiler/linker settings
+ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+ FetchContent_MakeAvailable(googletest)
+ 
+ enable_testing()
++ 
++include_directories(libs)
++include_directories(calc)
++
++set(MAIN Calculator)
++set(TESTS Calculator_test)
++
++set(SOURCES
++	main.cpp
++)
++
++set(HEADERS
++	libs/calc/Calculator.h
++)
+ 
+ add_executable(
+   ${MAIN}
+   ${SOURCES} ${HEADERS}
+ )
+ 
++set(TEST_SOURCES
++	libs/test/Calculator_test.cpp
++)
++
+ add_executable(
+   ${TESTS}
+   ${TEST_SOURCES}
+ )
+ 
+ target_link_libraries(
+-    ${TESTS}
+-    GTest::gtest_main
++  ${TESTS}
++  GTest::gtest_main
+ )
+ 
+ include(GoogleTest)
+-gtest_discover_tests(${TESTS})
+-
++gtest_discover_tests(${TESTS})
+\ No newline at end of file
+diff --git a/MiniProject/Setup.txt b/MiniProject/Setup.txt
+index 2068ec5..0c970ce 100644
+--- a/MiniProject/Setup.txt
++++ b/MiniProject/Setup.txt
+@@ -1,4 +1,4 @@
+-### For CMake Files Creation:
++    ### For CMake Files Creation:
+ 
+ ## Mandatory lines to include on top:
+     - cmake_minimum_required(VERSION 3.22.1/<version-number>)
+@@ -96,14 +96,21 @@
+     
+ 
+     # Use-Case:
+-    - add_library(Calculator SHARED libs/Calculator.cpp)
+-    - add_executable(Calculator.out main.cpp)
+-    - target_link_libraries(Calculator.out Calculator)
++    - CMakeLists.txt:
++        - include_directories(mylib)
++        - add_executable(Calculator.out Main.cpp)
++        - target_link_libraries(Calculator.out calc)
++        - add_subdirectory(mylib)
++
++    - mylib/CMakeLists.txt:
++        - add_library(calc SHARED Calculator.cpp)
+ 
+     # Project Folder Structure:
+-    - Shared-Lib
+-        - Calculator.h (Interface)
++    - mylib <Shared-lib>
++        - calc <Shared-lib-Interface-folder>
++            - Calculator.h (Interface)
+         - Calculator.cpp (Function Defination)
++        - CMakeLists.txt
+     - Main_file.cpp
+     - CMakeLists.txt
+ 
+diff --git a/MiniProject/libs/Calculator.cpp b/MiniProject/libs/Calculator.cpp
+index abb6a69..c6ba783 100644
+--- a/MiniProject/libs/Calculator.cpp
++++ b/MiniProject/libs/Calculator.cpp
+@@ -16,14 +16,14 @@ long long Calculator::factorial(int n){
+     return value;
+ }
+ 
+-long long Calculator::root(int n){
++double Calculator::root(int n){
+     return sqrt(n);
+ }
+ 
+-long long Calculator::natlog(int n){
++double Calculator::natlog(int n){
+     return log(n);
+ }
+ 
+-long long Calculator::power(int base,int raise){
++double Calculator::power(int base,int raise){
+     return pow(base,raise);
+ }
+diff --git a/MiniProject/libs/calc/Calculator.h b/MiniProject/libs/calc/Calculator.h
+index f585564..53ef6c4 100644
+--- a/MiniProject/libs/calc/Calculator.h
++++ b/MiniProject/libs/calc/Calculator.h
+@@ -14,11 +14,11 @@ public:
+     
+     long long factorial(int n);
+ 
+-    long long root(int n);
++    double root(int n);
+ 
+-    long long natlog(int n);
++    double natlog(int n);
+ 
+-    long long power(int base,int raise);
++    double power(int base,int raise);
+ };
+ 
+ #endif
+diff --git a/MiniProject/main.cpp b/MiniProject/main.cpp
+index 332714d..55e1cc7 100644
+--- a/MiniProject/main.cpp
++++ b/MiniProject/main.cpp
+@@ -1,4 +1,3 @@
+-#include <gtest/gtest.h>
+ #include "libs/calc/Calculator.h"
+ #include "libs/Calculator.cpp"
+ 
