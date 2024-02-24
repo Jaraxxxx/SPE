@@ -20,7 +20,21 @@
         cmake --build build
       become: yes
     
-    - name : Executing App
+    - name: Run Tests
       shell: |
         cd SPE/MiniProject/build
-        ./Calculator
+        ./Calcultor_test
+      become: yes
+    
+    - name : Docker Image Build
+      shell: |
+        docker build -t calculator:latest .
+      become: yes
+    
+    - name : Docker Push Image
+      shell: |
+        docker push jaraxxx/calculator:latest
+      become: yes
+
+
+
