@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-ARG ubuntu_FRONTEND=interactive # ignore user input required
+ARG DEBIAN_FRONTEND=interactive # ignore user input required
 
 # Install required build dependencies
 WORKDIR /Calculator
@@ -14,6 +14,8 @@ COPY libs libs
 RUN ls
 RUN cmake -B build -G "Unix Makefiles"
 RUN cmake --build build
+RUN sh "./build/Calculator_test"
+
 
 # Launch built application
 CMD ["./build/Calculator"]
