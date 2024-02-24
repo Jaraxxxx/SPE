@@ -20,3 +20,6 @@
 
     - name: Push image
       command: docker push jaraxxx/calculator:latest
+
+    - name: Run image
+      command: docker pull -it jaraxxx/calculator:latest 
