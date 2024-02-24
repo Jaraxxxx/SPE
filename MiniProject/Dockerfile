@@ -2,17 +2,17 @@ FROM ubuntu:latest
 ARG ubuntu_FRONTEND=interactive # ignore user input required
 
 # Install required build dependencies
+WORKDIR /Calculator
 RUN apt-get -y update && apt-get install -y
-RUN apt-get -y install gcc cmake git
-RUN mkdir -p /Calculator
+RUN apt-get -y install g++ gcc cmake git
 
 COPY CMakeLists.txt .
 COPY main.cpp .
 COPY libs libs
-WORKDIR /Calculator
 
 # Run cmake configure & build process
-RUN cmake -B build
+RUN ls
+RUN cmake -B build -G "Unix Makefiles"
 RUN cmake --build build
 
 # Launch built application

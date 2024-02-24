@@ -1,0 +1,37 @@
+---
+- name: Deploy or Update Kubernetes Deployment
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Check if the deployment already exists
+      shell: kubectl get deployment calculator --namespace calculator
+      ignore_errors: true
+      register: deployment_check
+
+    - name: Deploy or update based on existence
+      k8s:
+        state: "{{ 'present' if deployment_check.rc == 0 else 'absent' }}"
+        definition:
+          apiVersion: apps/v1
+          kind: Deployment
+          metadata:
+            name: calculator
+            namespace: calculator
+          spec:
+            replicas: 1  # Update with your desired replica count
+            selector:
+              matchLabels:
+                app: calculator
+            template:
+              metadata:
+                labels:
+                  app: calculator
+              spec:
+                containers:
+                - name: calculator
+                  image: jaraxxx/calculator
+                  tty: true
+                  stdin: true
+                  ports:
+                  - containerPort: 80  # Update with your container port

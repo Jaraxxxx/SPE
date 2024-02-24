@@ -3,9 +3,9 @@
 
   tasks:
     - name: delete previous deployment
-      command: kubectl delete deployment Calculator
+      command: kubectl delete deployment calculator
     - name: delete previous service
-      command: kubectl delete service Calculator
+      command: kubectl delete service calculator
     - name: deploy calculator on kubernetes
       command: kubectl apply -f calculator-deployment.yaml
     - name: create service
