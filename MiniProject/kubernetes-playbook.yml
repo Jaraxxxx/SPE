@@ -9,11 +9,11 @@
       command: kubectl delete service calculator-service
 
     - name: deploy calculator on kubernetes
-      command: kubectl apply -f calculator-deployment.yaml
+      command: kubectl apply -f calculator-deployment.yml
       args:
         chdir: /Users/root/.jenkins/workspace/SPE/MiniProject/
 
     - name: create service
-      command: kubectl apply -f calculator-service.yaml
+      command: kubectl apply -f calculator-service.yml
       args:
         chdir: /Users/root/.jenkins/workspace/SPE/MiniProject/
