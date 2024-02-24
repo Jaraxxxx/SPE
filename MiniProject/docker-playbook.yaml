@@ -4,10 +4,12 @@
   tasks:
     - name: Delete build directory
       command: rm -rf build
+
     - name: Create build directory
       command: mkdir build
+
     - name: Build Docker Image
-      command: docker build -t jaraxxx/calculator .
+      command: docker build -t calculator .
 
     - name: tag image
       command: docker tag calculator jaraxxx/calculator:latest
@@ -20,6 +22,3 @@
 
     - name: Push image
       command: docker push jaraxxx/calculator:latest
-
-    - name: Run image
-      command: docker pull -it jaraxxx/calculator:latest 
