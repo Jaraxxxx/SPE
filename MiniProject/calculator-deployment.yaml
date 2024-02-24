@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Calculator
+  name: calculator
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: Calculator
+      app: calculator
   template:
     metadata:
       labels:
-        app: Calculator
+        app: calculator
     spec:
       containers:
-      - name: Calculator-container
-        image: jaraxxx/spe:latest
+      - name: calculator
+        image: jaraxxx/calculator:latest
         imagePullPolicy: Always
         tty: true
         stdin: true
