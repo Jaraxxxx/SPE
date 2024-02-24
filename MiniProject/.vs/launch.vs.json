@@ -1,0 +1,24 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "ExampleTests.exe (test\\ExampleTests.exe)",
+      "name": "ExampleTests.exe (test\\ExampleTests.exe)"
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "Calculator_test.exe",
+      "name": "Calculator_test.exe"
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "Calculator_test.out.exe",
+      "name": "Calculator_test.out.exe"
+    }
+  ]
+}

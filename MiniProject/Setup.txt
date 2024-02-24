@@ -1,4 +1,4 @@
-    ### For CMake Files Creation:
+### For CMake Files Creation:
 
 ## Mandatory lines to include on top:
     - cmake_minimum_required(VERSION 3.22.1/<version-number>)
@@ -96,21 +96,14 @@
     
 
     # Use-Case:
-    - CMakeLists.txt:
-        - include_directories(mylib)
-        - add_executable(Calculator.out Main.cpp)
-        - target_link_libraries(Calculator.out calc)
-        - add_subdirectory(mylib)
-
-    - mylib/CMakeLists.txt:
-        - add_library(calc SHARED Calculator.cpp)
+    - add_library(Calculator SHARED libs/Calculator.cpp)
+    - add_executable(Calculator.out main.cpp)
+    - target_link_libraries(Calculator.out Calculator)
 
     # Project Folder Structure:
-    - mylib <Shared-lib>
-        - calc <Shared-lib-Interface-folder>
-            - Calculator.h (Interface)
+    - Shared-Lib
+        - Calculator.h (Interface)
         - Calculator.cpp (Function Defination)
-        - CMakeLists.txt
     - Main_file.cpp
     - CMakeLists.txt
 

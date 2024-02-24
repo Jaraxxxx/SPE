@@ -1,0 +1,12 @@
+- name: kubernetes deployment
+  hosts: localhost
+
+  tasks:
+    - name: delete previous deployment
+      command: kubectl delete deployment Calculator
+    - name: delete previous service
+      command: kubectl delete service Calculator
+    - name: deploy calculator on kubernetes
+      command: kubectl apply -f calculator-deployment.yaml
+    - name: create service
+      command: kubectl apply -f calculator-service.yaml
