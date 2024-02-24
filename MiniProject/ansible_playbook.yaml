@@ -1,0 +1,26 @@
+---
+- name: Execute Jenkins Pipeline for MiniProject
+  hosts: localhost
+  tasks:
+    - name: Clear Workspace
+      shell: |
+        rm -rf SPE
+      become: yes
+
+    - name: Git Checkout
+      shell: |
+        git clone "https://github.com/Jaraxxxx/SPE.git"
+      become: yes
+
+    - name: Build CMake
+      shell: |
+        cd SPE/MiniProject
+        rm -rf build
+        cmake -B build -G "Unix Makefiles"
+        cmake --build build
+      become: yes
+    
+    - name : Executing App
+      shell: |
+        cd SPE/MiniProject/build
+        ./Calculator

@@ -1,0 +1,28 @@
+{
+  "ActiveTargetSystem": "WSL: Ubuntu",
+  "DevContainersInfoBarHidden": true,
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "out\\build\\x64-Debug",
+      "out\\install\\x64-Debug"
+    ],
+    "WSL: Ubuntu": [
+      "out\\build\\x64-Debug",
+      "out\\install\\x64-Debug"
+    ]
+  },
+  "ExpandedNodes": [
+    "",
+    "\\gtest\\build",
+    "\\gtest\\build\\_deps",
+    "\\gtest\\build\\_deps\\googletest-subbuild",
+    "\\libs",
+    "\\libs\\calc",
+    "\\libs\\test",
+    "\\out",
+    "\\output",
+    "\\out\\build"
+  ],
+  "SelectedNode": "\\CMakeSettings.json",
+  "PreviewInSolutionExplorer": false
+}

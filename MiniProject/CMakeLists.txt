@@ -1,7 +1,5 @@
-cmake_minimum_required(VERSION 3.22.1)
-project("Calculator")
 cmake_minimum_required(VERSION 3.14)
-project(Calculator)
+project("Calculator")
 
 # GoogleTest requires at least C++14
 set(CMAKE_CXX_STANDARD 11)
