@@ -1,7 +1,7 @@
 - name: docker build and push
   hosts: localhost
   vars:
-    ansible_python_interpreter: /usr/bin/python3
+    ansible_python_interpreter: /usr/lib/python3/dist-packages
 
   tasks:
     - name: Log in to Docker Hub
