@@ -1,6 +1,10 @@
 ---
 - name: Execute Jenkins Pipeline for MiniProject
   hosts: localhost
+  become: true
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+
   tasks:
     - name : Docker Image Build
       shell: |

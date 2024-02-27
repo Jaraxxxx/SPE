@@ -1,5 +1,8 @@
 - name: docker build and push
   hosts: localhost
+  become: true
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
 
   tasks:
     - name: Log in to Docker Hub
