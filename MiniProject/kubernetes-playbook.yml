@@ -3,17 +3,13 @@
 
   tasks:
     - name: delete previous deployment
-      command: kubectl delete deployment calculator-app
+      command: kubectl delete deployment calculator-deployment
 
     - name: delete previous service
       command: kubectl delete service calculator-service
 
     - name: deploy calculator on kubernetes
-      command: kubectl apply -f calculator-deployment.yml
-      args:
-        chdir: /Users/root/.jenkins/workspace/SPE/MiniProject/
+      command: kubectl apply -f calculator-app-deployment.yml
 
     - name: create service
-      command: kubectl apply -f calculator-service.yml
-      args:
-        chdir: /Users/root/.jenkins/workspace/SPE/MiniProject/
+      command: kubectl apply -f calculator-app-service.yml

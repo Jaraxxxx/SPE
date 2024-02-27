@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: calculator-app
+  name: calculator-deployment
 spec:
   replicas: 1
   selector:
@@ -16,13 +16,5 @@ spec:
       - name: calculator
         image: jaraxxx/calculator:latest
         imagePullPolicy: Always
-        tty: true
-        stdin: true
         ports:
         - containerPort: 8080
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxSurge: 1
-      maxUnavailable: 1
-        

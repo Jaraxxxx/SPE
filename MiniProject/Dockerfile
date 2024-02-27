@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-ARG DEBIAN_FRONTEND=interactive
+ARG DEBIAN_FRONTEND=non-interactive
 
 # Install required build dependencies
 RUN apt-get update && apt-get install -y \
@@ -17,7 +17,7 @@ COPY main.cpp .
 COPY libs libs
 
 # Run cmake configure & build process
-RUN cmake -B build -G "Unix Makefiles"
+RUN cmake -B build
 RUN cmake --build build
 RUN "./build/Calculator_test"
 
