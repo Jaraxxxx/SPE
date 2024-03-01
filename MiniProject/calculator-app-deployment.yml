@@ -1,4 +1,3 @@
-apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: calculator-deployment
@@ -15,6 +14,5 @@ spec:
       containers:
       - name: calculator
         image: jaraxxx/calculator:latest
-        imagePullPolicy: Always
         ports:
         - containerPort: 8080
